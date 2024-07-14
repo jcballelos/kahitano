@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+  font-variation-settings: 'slnt' 0;
+}
+
+body {
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 300px;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #222831;
+  text-align: center;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: right;
+  font-size: 10px;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.nav-links a {
+  display: inline-block;
+  text-align: left;
+  padding: 14px 20px;
+  text-decoration: none;
+  justify-content: right;
+}
+
+.nav-links a:hover {
+  color: #9290c3;
+}
+
+.nav-links a.active {
+  color: #0c01de;
+}
+
+.nameofweb {
+  font-weight: bolder;
+  font-size: large;
+  margin-right: 360px;
+  font-family: 'Sedan SC', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-first-letter {
+  font-family: 'Sedan SC', serif;
+  font-weight: bold;
+  font-size: large;
+  color: #0c01de;
+}
+
+.search {
+  margin: 28px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.btn {
+  text-align: center;
+  margin-left: 10px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  width: 200px;
+  font-size: 12px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+  outline: none;
+  color: black;
+}
+
+button[type='submit'] {
+  padding: 10px 20px;
+  font-size: 12px;
+  border: none;
+  border-radius: 100px;
+  background-color: #535c91;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #9290c3;
+}
+
+.Bebito-logo,
+.lopez-logo {
+  width: 140px;
+  height: auto;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  padding: 17px 20px;
+  background-color: #222831;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer .text-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.footer .text-footer p {
+  color: #f5f5f5;
+  margin: 5px 0;
+}
+
+.footer .text-footer p.email,
+.footer .text-footer p.address {
+  font-weight: bold;
+  color: #9290c3;
+}
+
+.footer .text-footer p.email:hover,
+.footer .text-footer p.address:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer .text-footer {
+    gap: 8px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+.footer-Bebito-logo-hub {
+  margin-left: -100px;
+}
+
+.footer-Bebito-logo {
+  width: 126px;
+  height: 126px;
+  object-fit: cover;
+  /* object-position: 50% 50%; */
+  margin-right: 1100px;
+  margin-top: 10px;
+}
+
+.footer_Bebitohub {
+  /* margin-right: 1150px; */
+  margin-top: 10px;
+  /* justify-content: left; */
+  font-size: 20px;
+}
+
+.footer-Bebito {
+  font-family: 'Sedan SC', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 1103px;
+}
+
+.footer-pBebito {
+  font-family: 'Sedan SC', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-Hub {
+  font-family: 'Sedan SC', serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-right: 1175px;
+}
+
+.footer-pHub {
+  font-family: 'Sedan SC', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-first-letter {
+  font-family: 'Sedan SC', serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #0c01de;
+}
+
+.footer-rep-phil {
+  margin-left: 250px;
+  margin-top: -150px;
+  margin-bottom: 175px;
+  text-align: left;
+}
+
+.rep-of-phil {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contact-content {
+  margin-top: 30px;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-telephone-no {
+  text-decoration: underline;
+}
+
+.footer-mobile-no {
+  text-decoration: underline;
+}
+
+.footer-email-link {
+  text-decoration: underline;
+}
+
+.footer-emergency-hotline {
+  margin-left: 700px;
+  margin-top: -380px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.lq-emrg-htln {
+  margin-bottom: 30px;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lq-mdrrmo {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mdrrmo-telephone-no {
+  text-decoration: underline;
+}
+
+.mdrrmo-mobile-no {
+  text-decoration: underline;
+}
+
+.lq-pnp {
+  margin-top: 30px;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pnp-telephone-no {
+  text-decoration: underline;
+}
+
+.pnp-mobile-no {
+  text-decoration: underline;
+}
+
+.lq-bfp {
+  margin-top: 30px;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bfp-telephone-no {
+  text-decoration: underline;
+}
+
+.bfp-mobile-no {
+  text-decoration: underline;
+}
+
+.footer-government-links {
+  text-align: left;
+  margin-left: 1050px;
+  margin-top: -474px;
+  margin-bottom: 200px;
+}
+
+.government-links {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.population-name {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-weight: 600;
+  font-family: 'Sedan SC', serif;
+  font-weight: bold;
+  padding-top: 7.5rem;
+}
+
+.infographic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+.infog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 1 calc(33.33% - 90px);
+  margin-bottom: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  button {
+    background-color: #0c01de;
+    color: white;
+    border: none;
+    padding: 10px 95px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-color: #ce5f82;
+    transition: 0.2s;
+  }
+}
+
+.infog-container img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.infog-container p {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.infog-container p:first-child {
+  font-size: 1.8rem; /* Adjust font size for the title */
+  font-weight: bold;
+  color: #333; /* Adjust text color for the title */
+  margin-bottom: 1.5rem;
+}
+
+/* Define animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to infog-container */
+.infog-container {
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Add transition for smoother image resizing */
+.infog-container img {
+  transition: transform 0.3s ease;
+}
+
+/* Add hover effect to images */
+.infog-container img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .infog-container {
+    flex: 0 1 calc(50% - 20px); /* Adjust width as needed for smaller screens */
+  }
+}
+
+.population-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Adjust as needed for spacing */
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  margin-left: 50px;
+  background-color: #666;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #272323;
+}

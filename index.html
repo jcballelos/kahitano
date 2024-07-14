@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <title>Bebito</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="webisite icon" type="png" href="assets/logoBebito-removebg-preview.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sedan:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gwendolyn:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gwendolyn:wght@400;700&family=PT+Sans+Narrow:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo-container">
+        <img class="logo" src="/assets/logoBebito-removebg-preview.png" alt="Bebito_logo" />
+        <h3 class="nameofweb"><span class="nav-first-letter">B</span>arangay <span class="nav-first-letter">B</span>ebito
+        </h3>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="officials.html">Officials</a>
+        <a href="population.html">Population</a>
+      </div>
+      <form class="search" action="" method="GET">
+        <input type="text" name="query" placeholder="Search only for Home page..." />
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="title">
+      <img class="Bebito-logo" src="/assets/logoBebito-removebg-preview.png" alt="Bebito-logo" />
+      <div class="text-container">
+        <p class="wlc">Welcome to</p>
+        <h1 class="int-nameofweb"><span class="int-first-letter">B</span>arangay <span
+            class="int-first-letter">B</span>ebito
+        </h1>
+        <p class="desc12">Lopez, Quezon</p>
+      </div>
+      <img class="lopez-logo" src="/assets/Lopez_Logo-removebg-preview(1).png" alt="Lopez_Logo" />
+    </div>
+  </section>
+
+  <section>
+    <div class="capt-mes-sec">
+      <div class="capt-mes-div">
+        <div class="profile-avatar">
+          <img class="img-bg" src="assets/lovepik-removebg-preview.png">
+          <img class="capt-img" src="/assets/capnapogi-removebg-preview.png" alt="capt-img">
+        </div>
+
+        <div class="sulat">
+          <img class="capt-mes-img" src="/assets/old-paper-removebg-preview.png" alt="Barangay Captain Message">
+          <div class="message-cont">
+          <h1 class="capt-msg-hdr">Barangay Captain's Message</h1>
+            <p class="capt-msg-cont">
+  
+              "Good day to everyone! We are delighted to announce our new barangay website. Here, you can find important information and services that can help in your daily life. We hope this website becomes a channel to facilitate communication and access to our barangay's programs. Thank you for your support
+
+  
+              "Thank You. TO GOD BE ALL THE GLORY".
+
+            </p>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission" id="about-us">
+    <h1 class="title-vm">Mission and Vision</h1>
+    <div class="back-mission">
+      <div class="text-mission">
+        <h1 class="h">Mission</h1>
+        <p class="desc">
+          "Manguna sa mga gawaing pang barangay mabigyan ng magandang kinabukasan ang mga kabataan magkaroon ng hanap buhay ang mga tao magkaroon ng kugar na pasyalan o magagandang tanawin at mga gusali na pang hanap buhay magkaroon ng mga paaralan pangkolehiyo maingatan ang mga puno  at mapamalagi ang kalinisan at katahimikan at kaayusan ng barangay"
+        </p>
+      </div>
+
+      <div class="text-vision">
+        <h1 class="h">Vision</h1>
+        <p class="desc">
+          "Na maging isang maunlad na barangay at makadiyos ang mga tao at lahat ng magiging sanggunian barangay ay maging tapat sa tungkulin at makatao at magtiwala sa sarili at kapwa at di makasarili"
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="Bebito-mncplty">
+      <div class="Bebito-mncplty-ttl">
+        <p class="Bebito-mncplty-ttl-p">Bebito Municipality of Lopez Quezon</p>
+      </div>
+      <div class="Bebito-mncplty-desc">
+        <p class="Bebito-mncplty-desc-p">Bebito, formerly Poblacion, is a barangay in the municipality of Lopez, in
+          the province of Quezon. Its population <br>as determined by the 2021 Census was 4,627 This represented the
+          total
+          population of Lopez.</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section>
+    <div class="Bebito-loc">
+      <div class="Bebito-mncplty-ttl">
+        <p class="Bebito-mncplty-ttl-p">Location & Geography</p>
+      </div>
+      <div class="Bebito-mncplty-desc">
+        <p class="Bebito-mncplty-desc-p">Bebito is situated at approximately 13.8820, 122.2621, in the island of
+          Luzon. Elevation at these coordinates is <br>estimated at 8.5 meters or 27.9 feet above mean sea level.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="mapping">
+      <div id="map"></div>
+      <script src="script.js"></script>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-Bebito-logo-hub">
+      <img class="footer-Bebito-logo" src="/assets/logoBebito-removebg-preview.png" alt="Bebito-logo">
+      <div class="footer_Bebitohub">
+        <div class="footer-Bebito">
+          <p class="footer-pBebito"><span class="footer-first-letter">B</span>arangay <span
+              class="footer-first-letter">B</span>ebito</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-rep-phil">
+      <div class="rep-of-phil">
+        <p class="rep-of-phil">Republic of the Philippines</p>
+      </div>
+      <div class="rep-of-phil-content">
+        <p>All content is in the public domain unless otherwise stated.</p>
+      </div>
+
+      <div class="contact-content">
+        <p class="contact-content">Contact Us</p>
+      </div>
+      <div class="footer-telephone">
+        <p>Telephone no.: <span class="footer-telephone-no">(042) 785-9978</span></p>
+      </div>
+      <div class="footer-mobile">
+        <p>Mobile no.: <span class="footer-mobile-no">+639953871193</span></p>
+      </div>
+      <div class="footer-email">
+        <p>Email: <span class="footer-email-link">bcBebito@gmail.com</span></p>
+      </div>
+    </div>
+
+    <div class="footer-emergency-hotline">
+      <div class="lq-emrg-htln">
+        <p class="lq-emrg-htln">Lopez, Quezon Emergency Hotline</p>
+      </div>
+
+      <div class="lq-mdrrmo">
+        <p class="lq-mdrrmo">MDRRMO</p>
+      </div>
+      <div class="mdrrmo-telephone">
+        <p>Telephone no.: <span class="mdrrmo-telephone-no">(420) 717-4364</span></p>
+      </div>
+      <div class="mdrrmo-mobile">
+        <p>Mobile no.: <span class="mdrrmo-mobile-no">+639093410636</span></p>
+      </div>
+
+      <div class="lq-pnp">
+        <p class="lq-pnp">PNP</p>
+      </div>
+      <div class="pnp-telephone">
+        <p>Telephone no.: <span class="pnp-telephone-no">(042) 326-1269</span></p>
+      </div>
+      <div class="pnp-mobile">
+        <p>Mobile no.: <span class="pnp-mobile-no">+639084898918</span></p>
+      </div>
+
+      <div class="lq-bfp">
+        <p class="lq-bfp">BFP</p>
+      </div>
+      <div class="bfp-telephone">
+        <p>Telephone no.: <span class="bfp-telephone-no">(042) 717-4459</span></p>
+      </div>
+      <div class="bfp-mobile">
+        <p>Mobile no.: <span class="bfp-mobile-no">+639303271448</span></p>
+      </div>
+    </div>
+
+    <div class="footer-government-links">
+      <div class="government-links">
+        <p class="government-links">GOVERNMENT LINKS</p>
+      </div>
+
+      <div class="gov-links">
+        <a href="https://president.gov.ph/">
+          <p>Office of the President</p>
+        </a>
+        <a href="https://ovp.gov.ph/">
+          <p>Office of the Vice President</p>
+        </a>
+        <a href="https://legacy.senate.gov.ph/">
+          <p>Senate of the Philippines</p>
+        </a>
+        <a href="https://www.congress.gov.ph/">
+          <p>House of Representative</p>
+        </a>
+        <a href="https://sc.judiciary.gov.ph/">
+          <p>Supreme Court</p>
+        </a>
+        <a href="https://ca.judiciary.gov.ph/">
+          <p>Court of Appeals</p>
+        </a>
+        <a href="https://sb.judiciary.gov.ph/">
+          <p>Sandiganbayan</p>
+        </a>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

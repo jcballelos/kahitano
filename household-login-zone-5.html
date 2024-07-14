@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="household-login.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Population | Bebito</title>
+    <link rel="webisite icon" type="png" href="assets/logoBebito-removebg-preview.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Sedan:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://app.awesome-table.com/AwesomeTableInclude.js"></script>
+    <script>
+      function checkPassword() {
+        const correctPassword = 'Icept';
+        const enteredPassword = document.getElementById('password').value;
+
+        if (enteredPassword === correctPassword) {
+          document.getElementById('modal').style.display = 'flex';
+        } else {
+          alert('Incorrect password. Please try again.');
+        }
+      }
+
+      function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+      }
+
+      function hideModalOnLoad() {
+        document.getElementById('modal').style.display = 'none';
+      }
+
+      document.addEventListener('DOMContentLoaded', hideModalOnLoad);
+    </script>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="logo-container">
+        <img class="logo" src="assets/logoBebito-removebg-preview.png" alt="Bebito_logo" />
+        <h3 class="nameofweb">
+          <span class="nav-first-letter">B</span>arangay<span class="nav-first-letter">B</span>ebito
+        </h3>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="officials.html">Officials</a>
+        <a href="population.html">Population</a>
+      </div>
+      <form class="search" action="search_results.html" method="GET">
+        <input type="text" name="query" placeholder="Search..." />
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <section class="parent">
+      <button class="back-button" onclick="history.back()">&#8592;</button>
+      <div class="child">
+        <h1>Guest Area</h1>
+        <p>Please enter the password below.</p>
+
+        <input type="password" placeholder="Enter password" id="password" />
+
+        <button onclick="checkPassword()">Go</button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Zone 5A Household Population<br />Barangay Bebito Lopez, Quezon</h2>
+        <div id="awesomeTableContainer">
+          <div
+            data-type="AwesomeTableView"
+            data-filters=""
+            data-viewID="-O-SSyxs6zGFLsDRYaEl"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
